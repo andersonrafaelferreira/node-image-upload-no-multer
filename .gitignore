@@ -1,0 +1,6 @@
+node_modules/
+
+# ignore files in folder foo
+public/images/*
+# but keep the folder
+!public/images/.keep

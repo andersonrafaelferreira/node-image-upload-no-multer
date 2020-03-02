@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upload fetch</title>
+</head>
+<body>
+<input type="file" id="file">
+
+<script type="text/javascript">
+	let fileToSend = document.getElementById('file')
+	fileToSend.addEventListener('change', function(e){
+
+		fetch('http://localhost:3000/upload', {
+			method: 'POST', 
+			body: file.files[0]
+		})
+
+	})
+</script>
+</body>
+</html>
